@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a1f44;
+    color: #ffffff;
+}
+
+h1 {
+    color: #75aadb;
+}
+
+h2 {
+    color: #c9a227;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 320px;
+    min-height: 180px;
+    margin: 20px 0;
+    background-color: #12294f;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.tarjeta_barcelona {
+    border-color: #a50044;
+}
+
+.tarjeta_argentina {
+    border-color: #75aadb;
+}
+
+.tarjeta_miami {
+    border-color: #f7b5cd;
+}
+
+footer {
+    background-color: #12294f;
+    text-align: center;
+    padding: 10px;
+}
