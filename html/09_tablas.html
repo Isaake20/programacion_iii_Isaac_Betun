@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <h1>Tablas en HTML 5</h1>
+    <p>Una tabla permite organizar datos en filas y columnas.</p>
+
+    <table border="1">
+        <caption>Universo Messi</caption>
+        <tr>
+            <th colspan="3">Etapas de Lionel Messi</th>
+        </tr>
+        <tr>
+            <th>Club</th>
+            <th>País</th>
+            <th>Títulos</th>
+        </tr>
+        <tr>
+            <td>FC Barcelona</td>
+            <td rowspan="2">Europa</td>
+            <td>Champions League</td>
+        </tr>
+        <tr>
+            <td>Paris Saint-Germain</td>
+            <td>Ligue 1</td>
+        </tr>
+    </table>
+    <br>
+
+    <table border="1">
+        <caption>Resultados de partidos de Argentina</caption>
+        <thead>
+            <tr>
+                <th scope="col">Torneo</th>
+                <th scope="col">Año</th>
+                <th scope="col">Rival</th>
+                <th scope="col">Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Copa Mundial</td>
+                <td>2022</td>
+                <td>Francia</td>
+                <td>3-3 (4-2 en penales)</td>
+            </tr>
+            <tr>
+                <td>Copa América</td>
+                <td>2021</td>
+                <td>Brasil</td>
+                <td>1-0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

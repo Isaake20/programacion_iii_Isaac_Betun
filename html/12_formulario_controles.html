@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles de formulario</title>
+</head>
+<body>
+    <h1>Controles de formulario: Lionel Messi</h1>
+    <form action="/registro" method="post">
+        <p>¿Qué equipo de Messi prefieres?</p>
+        <label><input type="radio" name="equipo" value="barcelona" required> FC Barcelona</label>
+        <label><input type="radio" name="equipo" value="argentina"> Selección Argentina</label>
+        <label><input type="radio" name="equipo" value="inter_miami"> Inter Miami</label>
+
+        <p>¿Qué habilidades destacas?</p>
+        <label><input type="checkbox" name="habilidades" value="regate"> Regate</label>
+        <label><input type="checkbox" name="habilidades" value="pase"> Pases</label>
+        <label><input type="checkbox" name="habilidades" value="tiro_libre"> Tiros libres</label>
+
+        <p><label for="nivel">Valora su habilidad (1 a 10):</label>
+        <input type="range" id="nivel" name="nivel" min="1" max="10" value="10"></p>
+        <p><label for="partido">Fecha de un partido memorable:</label>
+        <input type="date" id="partido" name="partido"></p>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
