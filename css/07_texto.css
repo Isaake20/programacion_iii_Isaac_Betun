@@ -1,0 +1,35 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.texto-argentina {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto-barcelona {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.texto-40px {
+    font-size: 40px;
+}
+
+.texto-20px {
+    font-size: 20px;
+}
+
+.texto-10px {
+    font-size: 10px;
+}
+
+.debutante {
+    font-weight: 300;
+}
+
+.titular {
+    color: #3b82f6;
+}
+
+.capitan {
+    color: #ef4444;
+}
