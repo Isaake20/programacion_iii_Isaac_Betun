@@ -16,9 +16,13 @@ Durante la materia se trabajarán diferentes tecnologías orientadas al desarrol
 
 **HTML (HyperText Markup Language)** es el lenguaje utilizado para estructurar el contenido de las páginas web. Permite definir elementos como títulos, párrafos, imágenes, enlaces, formularios, tablas y otras partes de una página.
 
+Temas practicados: estructura básica, títulos, párrafos, listas, formatos de texto, enlaces, imágenes, elementos semánticos, tablas, formularios y multimedia (audio y video).
+
 ### CSS
 
 **CSS (Cascading Style Sheets)** permite definir la apariencia y presentación de una página web. Se utiliza para trabajar con colores, tamaños, posiciones, fuentes, diseños y estilos responsivos.
+
+Temas practicados: formas de incluir estilos (en línea, interno y externo), selectores, colores y fondos.
 
 ### JavaScript
 
@@ -35,6 +39,21 @@ Durante la materia se trabajarán diferentes tecnologías orientadas al desarrol
 ### ReactJS
 
 **ReactJS** es una biblioteca de JavaScript utilizada para crear interfaces de usuario. Permite dividir una aplicación en componentes reutilizables y construir interfaces dinámicas de manera organizada.
+
+## Estructura del repositorio
+
+```text
+programacion_iii_Isaac_Betun/
+│
+├── html/        Prácticas de HTML (01 a 13)
+│   ├── images/
+│   ├── Music/
+│   └── video/
+├── css/         Prácticas de CSS (01 a 04)
+├── images/
+│
+└── README.md
+```
 
 ## Contenido del repositorio
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de fan de Messi</title>
+</head>
+<body>
+    <h1>Formulario de fan de Messi</h1>
+    <form action="/registro" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="equipo">Equipo favorito de Messi:</label>
+        <select id="equipo" name="equipo">
+            <option value="barcelona">FC Barcelona</option>
+            <option value="argentina">Selección Argentina</option>
+            <option value="inter_miami">Inter Miami</option>
+        </select>
+        <label for="mensaje">Tu recuerdo favorito de Messi:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

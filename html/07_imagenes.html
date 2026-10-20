@@ -4,44 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagenes</title>
+    <style>
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+            gap: 1rem;
+            max-width: 1200px;
+        }
+
+        .galeria figure {
+            margin: 0;
+        }
+
+        .galeria img {
+            display: block;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center 20%;
+        }
+    </style>
 </head>
 <body>
     <h1>Utilización de la etiqueta Img</h1>
-    <img
-        src="images/messi.jpg"
-        alt="Lionel Messi"
-        width="300"
-        height="350"
-        loading="eager"
-    >
+    <section class="galeria" aria-label="Galería de imágenes de Lionel Messi">
+        <figure>
+            <img src="images/messi.jpg" alt="Lionel Messi" loading="eager">
+            <figcaption>Lionel Messi</figcaption>
+        </figure>
 
-    <img
-        src="images/personajes/messi3.jpg"
-        alt="Lionel Messi con la Copa del Mundo"
-        width="500"
-        height="350"
-        loading="eager"
-    >
+        <figure>
+            <img src="images/personajes/messi3.jpg" alt="Lionel Messi con la Copa del Mundo" loading="eager">
+            <figcaption>Lionel Messi con la Copa del Mundo</figcaption>
+        </figure>
 
-    <img
-        src="images/personajes/messi4.jpeg"
-        alt="Lionel Messi con la selección argentina"
-        width="300"
-        height="350"
-        loading="lazy"
-    >
+        <figure>
+            <img src="images/personajes/messi4.jpeg" alt="Lionel Messi con la selección argentina" loading="lazy">
+            <figcaption>Lionel Messi con la selección argentina</figcaption>
+        </figure>
 
-    <figure>
-        <img
-            src="../images/messi1.jpeg"
-            alt="Lionel Messi"
-            width="500"
-            height="350"
-            loading="eager"
-        >
-        <figcaption>
-            Lionel Messi, campeón del mundo con Argentina
-        </figcaption>
-    </figure>
+        <figure>
+            <img src="../images/messi1.jpeg" alt="Lionel Messi" loading="eager">
+            <figcaption>Lionel Messi, campeón del mundo con Argentina</figcaption>
+        </figure>
+    </section>
+
+    <h2>Imagen con tamaño definido</h2>
+    <img src="images/messi.jpg" alt="Lionel Messi" width="300" height="300" style="object-fit: cover;">
+
+    <h2>Imagen como enlace</h2>
+    <a href="https://www.afa.com.ar" target="_blank">
+        <img src="images/personajes/messi3.jpg" alt="Ir al sitio de la AFA" width="300" height="300" style="object-fit: cover;">
+    </a>
 </body>
 </html>
