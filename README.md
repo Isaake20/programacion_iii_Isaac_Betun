@@ -22,7 +22,7 @@ Temas practicados: estructura básica, títulos, párrafos, listas, formatos de 
 
 **CSS (Cascading Style Sheets)** permite definir la apariencia y presentación de una página web. Se utiliza para trabajar con colores, tamaños, posiciones, fuentes, diseños y estilos responsivos.
 
-Temas practicados: formas de incluir estilos (en línea, interno y externo), selectores, colores y fondos.
+Temas practicados: formas de incluir estilos (en línea, interno y externo), selectores, colores y fondos, modelo de caja, tarjetas, texto (fuentes, alineación, decoración, transformación e interlineado), carteles, display y visibility.
 
 ### JavaScript
 
@@ -49,7 +49,7 @@ programacion_iii_Isaac_Betun/
 │   ├── images/
 │   ├── Music/
 │   └── video/
-├── css/         Prácticas de CSS (01 a 04)
+├── css/         Prácticas de CSS (01 a 10)
 ├── images/
 │
 └── README.md
