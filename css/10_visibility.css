@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a1f44;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h1 {
+    color: #75aadb;
+}
+
+h2 {
+    color: #c9a227;
+}
+
+.caja {
+    background-color: #12294f;
+    border: 2px solid #75aadb;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.oculto {
+    visibility: hidden;
+}
+
+.eliminado {
+    display: none;
+}
+
+.tarjeta {
+    background-color: #2a0f1d;
+    border: 3px solid #a50044;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 320px;
+}
+
+.secreto {
+    visibility: hidden;
+}
+
+.tarjeta:hover .secreto {
+    visibility: visible;
+}

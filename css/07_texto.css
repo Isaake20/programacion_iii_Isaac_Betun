@@ -33,3 +33,78 @@ h1 {
 .capitan {
     color: #ef4444;
 }
+
+.peso-fino {
+    font-weight: 300;
+}
+
+.peso-medio {
+    font-weight: 500;
+}
+
+.peso-grueso {
+    font-weight: 800;
+}
+
+.estilo-normal {
+    font-style: normal;
+}
+
+.estilo-italica {
+    font-style: italic;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.centro {
+    text-align: center;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.importante {
+    text-decoration: underline;
+    text-decoration-color: gold;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.enlace {
+    text-decoration: none;
+}
+
+.titulo-mayuscula {
+    text-transform: uppercase;
+}
+
+.titulo-minuscula {
+    text-transform: lowercase;
+}
+
+.titulo-capitalizado {
+    text-transform: capitalize;
+}
+
+.espaciado-simple {
+    line-height: 1;
+}
+
+.espaciado-doble {
+    line-height: 2;
+}
+
+.espacio-letras1 {
+    letter-spacing: 4px;
+}
+
+.espacio-letras2 {
+    letter-spacing: 1px;
+}
