@@ -1,49 +1,72 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #0a1f44;
-    color: #ffffff;
-    padding: 20px;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
 }
 
-h1 {
-    color: #75aadb;
-}
-
-h2 {
-    color: #c9a227;
+.secreta {
+    visibility: hidden;
 }
 
 .caja {
-    background-color: #12294f;
-    border: 2px solid #75aadb;
-    padding: 15px;
+    position: static;
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
     margin-bottom: 10px;
 }
 
-.visible {
-    visibility: visible;
+.especial {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #a50044;
 }
 
-.oculto {
-    visibility: hidden;
+.tarjeta-relativa {
+    position: relative;
+    width: 300px;
+    padding: 30px;
+    border: 2px solid #75aadb;
+    color: #f7b5cd;
 }
 
-.eliminado {
-    display: none;
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #c9a227;
+    padding: 5px 10px;
+    color: #0a1f44;
 }
 
-.tarjeta {
-    background-color: #2a0f1d;
-    border: 3px solid #a50044;
+.boton-fijo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #75aadb;
+    color: #0a1f44;
+    padding: 10px 20px;
     border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     padding: 20px;
-    max-width: 320px;
+    background-color: #12294f;
 }
 
-.secreto {
-    visibility: hidden;
+nav a {
+    color: #c9a227;
+    margin-right: 20px;
 }
 
-.tarjeta:hover .secreto {
-    visibility: visible;
+section {
+    min-height: 450px;
+    padding: 30px;
+    border-bottom: 1px solid #6474bb;
 }
