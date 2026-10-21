@@ -3,29 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visibility Messi</title>
+    <title>Visibility</title>
     <link rel="stylesheet" href="10_visibility.css">
 </head>
 <body>
-    <h1>Visibility en la carrera de Messi</h1>
+    <header>
+    </header>
+    <nav>
+        <a href="#barcelona">Barcelona</a>
+        <a href="#argentina">Argentina</a>
+        <a href="#miami">Inter Miami</a>
+    </nav>
 
-    <h2>Visible</h2>
-    <div class="caja visible">Copa del Mundo 2022</div>
+    <h1>Títulos</h1>
+    <p>Título 1: Mundial Catar 2022</p>
+    <p class="secreta">Título 2: Información reservada</p>
+    <p>Título 3: Copa América 2021</p>
 
-    <h2>Hidden: se oculta pero conserva su espacio</h2>
-    <div class="caja">Antes del elemento oculto</div>
-    <div class="caja oculto">Copa América 2021</div>
-    <div class="caja">Después del elemento oculto</div>
-
-    <h2>Display none: se oculta y no conserva su espacio</h2>
-    <div class="caja">Antes del elemento eliminado</div>
-    <div class="caja eliminado">Balón de Oro 2023</div>
-    <div class="caja">Después del elemento eliminado</div>
-
-    <h2>Hover: aparece al pasar el mouse</h2>
-    <div class="tarjeta">
-        <p>Pasa el mouse sobre la tarjeta</p>
-        <p class="secreto">Messi marcó 91 goles en un año calendario (2012).</p>
+    <h1>Academia de Fútbol</h1>
+    <h2>Uso de propiedad Position</h2>
+    <div class="caja">Lionel Messi</div>
+    <div class="caja">Ángel Di María</div>
+    <div class="especial">Capitán de Argentina</div>
+    <h2>Uso de propiedad Visibility</h2>
+    <div class="tarjeta-relativa">
+        <span class="etiqueta">
+            DELANTERO
+        </span>
+        <h1>Lionel Messi</h1>
+        <p>Ocho veces Balón de Oro</p>
     </div>
+    <h2>Uso de propiedad Position: Fixed</h2>
+    <h2>Historia de Messi</h2>
+    <p>Nació en Rosario en 1987</p>
+    <p>Debutó en el Barcelona a los 17 años</p>
+    <p>Se consagró campeón del mundo en 2022</p>
+    <section id="barcelona">
+        <h2>FC Barcelona</h2>
+        <p>La etapa más importante de su carrera</p>
+    </section>
+    <section id="argentina">
+        <h2>Selección Argentina</h2>
+        <p>Campeón del mundo y de América</p>
+    </section>
+    <section id="miami">
+        <h2>Inter Miami</h2>
+        <p>Su equipo actual en la MLS</p>
+    </section>
+    <a class="boton-fijo"
+        href="https://www.intermiamicf.com/">Más información</a>
 </body>
 </html>
