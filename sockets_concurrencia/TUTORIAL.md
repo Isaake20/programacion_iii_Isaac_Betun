@@ -5,6 +5,12 @@
 
 > Antes de grabar, cambia los datos de la clase `Datos` en `Servidor.java` por la tabla de una pantalla simple de **tu módulo** (nombre, columnas, filas).
 
+## Modo rápido (doble clic)
+
+1. **PC física**: doble clic en `1_SERVIDOR.bat` (compila y levanta el servidor).
+2. Copia `Cliente.class` y `2_CLIENTE.bat` a la VM.
+3. **VM**: doble clic **dos veces** en `2_CLIENTE.bat` (se abren 2 clientes) y en cada uno escribe la tabla.
+
 ---
 
 ## 0. Qué necesitas
