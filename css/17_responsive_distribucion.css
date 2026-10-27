@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0a1f44;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Mobile First */
+
+/* Encabezado */
+
+.encabezado {
+    padding: 2rem 1rem;
+    background-color: #12294f;
+    text-align: center;
+    border-bottom: 3px solid #c9a227;
+}
+
+.encabezado h1 {
+    font-size: 2rem;
+    color: #c9a227;
+}
+
+/* Menú móvil */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding: 1rem;
+    background-color: #1b3a6b;
+}
+
+.menu a {
+    color: #c9a227;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Distribución móvil */
+
+.distribucion {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+
+    width: 92%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* Contenido principal */
+
+.principal {
+    min-width: 0;
+    padding: 1.25rem;
+    background-color: #12294f;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #75aadb;
+}
+
+/* Torneos: una columna */
+
+.misiones {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.mision {
+    padding: 1.25rem;
+    background-color: #1b3a6b;
+    border: 1px solid #75aadb;
+    border-radius: 10px;
+}
+
+.mision h3 {
+    color: #c9a227;
+}
+
+/* Plantel */
+
+#escuadron {
+    margin-top: 2rem;
+}
+
+.escuadron {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.piloto {
+    padding: 1.25rem;
+    background-color: #1b3a6b;
+    border: 2px solid #f7b5cd;
+    border-radius: 10px;
+}
+
+.piloto h3 {
+    color: #c9a227;
+}
+
+/* Panel lateral */
+
+.lateral {
+    min-width: 0;
+    padding: 1.5rem;
+    background-color: #1b3a6b;
+    border-left: 4px solid #c9a227;
+    border-radius: 10px;
+}
+
+.lateral ul {
+    padding-left: 1.5rem;
+}
+
+.estado {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #15803d;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Pie de página */
+
+footer {
+    padding: 1.5rem;
+    background-color: #12294f;
+    text-align: center;
+}
+
+footer a {
+    color: #c9a227;
+}
+
+/* Tabletas: desde 600px */
+
+@media (min-width: 600px) {
+
+    .encabezado h1 {
+        font-size: 2.5rem;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .misiones {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .escuadron {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* Computadoras: desde 1000px */
+
+@media (min-width: 1000px) {
+
+    .encabezado h1 {
+        font-size: 3rem;
+    }
+
+    .distribucion {
+        grid-template-columns:
+            minmax(0, 3fr) minmax(240px, 1fr);
+    }
+
+    .principal {
+        padding: 2rem;
+    }
+
+    .misiones {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .escuadron {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}

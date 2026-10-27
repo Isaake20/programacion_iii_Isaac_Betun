@@ -1,0 +1,42 @@
+body {
+    background-color: #0a1f44;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #c9a227;
+}
+
+.contenedor1,
+.contenedor2,
+.contenedor3 {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #12294f;
+}
+
+.contenedor1 {
+    justify-content: flex-start;
+}
+
+.contenedor2 {
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.contenedor3 {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.personaje {
+    padding: 20px;
+    background-color: #75aadb;
+    color: #0a1f44;
+    border: 2px solid #c9a227;
+    text-align: center;
+}
