@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0a1f44;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Mobile First */
+
+.encabezado {
+    padding: 2rem 1rem;
+    background-color: #12294f;
+    text-align: center;
+    border-bottom: 3px solid #c9a227;
+}
+
+.encabezado h1 {
+    font-size: 2rem;
+    color: #c9a227;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: #1b3a6b;
+}
+
+.menu a {
+    color: #c9a227;
+    font-weight: bold;
+}
+
+.contenido {
+    width: 92%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+h2 {
+    color: #75aadb;
+}
+
+/* Galería: una columna */
+
+.galeria {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.tarjeta {
+    padding: 1rem;
+    background-color: #12294f;
+    border: 2px solid #75aadb;
+    border-radius: 10px;
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    color: #c9a227;
+}
+
+#informacion {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #12294f;
+    border-left: 4px solid #c9a227;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: #12294f;
+    text-align: center;
+}
+
+/* Tabletas: desde 600px */
+
+@media (min-width: 600px) {
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* Computadoras: desde 1000px */
+
+@media (min-width: 1000px) {
+
+    .encabezado h1 {
+        font-size: 3rem;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+}
