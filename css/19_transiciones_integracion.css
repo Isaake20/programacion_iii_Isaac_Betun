@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0a1f44;
+    color: #f1f5f9;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 2rem 1rem;
+    background-color: #12294f;
+    text-align: center;
+}
+
+header h1 {
+    color: #c9a227;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+main {
+    width: 92%;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+/* Cancha */
+.cancha {
+    position: relative;
+    height: 350px;
+    background: radial-gradient(circle at center, #2e7d32, #0b3d12);
+    border: 2px solid #75aadb;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Luces del estadio */
+.luz {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: parpadeo 2s infinite alternate;
+}
+
+.luz1 { top: 12%; left: 10%; }
+.luz2 { top: 25%; left: 75%; animation-delay: 0.5s; }
+.luz3 { top: 70%; left: 25%; animation-delay: 1s; }
+.luz4 { top: 80%; left: 85%; animation-delay: 1.5s; }
+.luz5 { top: 10%; left: 50%; animation-delay: 0.8s; }
+
+@keyframes parpadeo {
+    from { opacity: 0.2; transform: scale(0.6); }
+    to { opacity: 1; transform: scale(1.4); }
+}
+
+/* Balón en movimiento */
+.balon {
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    text-align: center;
+    animation: jugada 5s ease-in-out infinite alternate;
+}
+
+.balon span {
+    display: block;
+    font-size: 60px;
+}
+
+.balon p {
+    margin: 0;
+    font-weight: bold;
+}
+
+@keyframes jugada {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(25vw, -50px) rotate(180deg); }
+    100% { transform: translate(50vw, 30px) rotate(360deg); }
+}
+
+/* Marcador */
+.marcador {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #a50044;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    animation: aviso 2s ease-in-out infinite alternate;
+}
+
+@keyframes aviso {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+/* Centro de análisis */
+.controles {
+    margin-top: 2rem;
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.radar-contenedor,
+.estado {
+    flex: 1 1 280px;
+    padding: 1.5rem;
+    background-color: #12294f;
+    border: 1px solid #75aadb;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.radar-contenedor:hover,
+.estado:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.radar {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border: 3px solid #75aadb;
+    border-radius: 50%;
+}
+
+.centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    margin: -7px 0 0 -7px;
+    background-color: #c9a227;
+    border-radius: 50%;
+}
+
+.pulso {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #c9a227;
+    border-radius: 50%;
+    animation: onda 2s ease-out infinite;
+}
+
+@keyframes onda {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(7); opacity: 0; }
+}
+
+footer {
+    padding: 1rem;
+    background-color: #12294f;
+    text-align: center;
+}

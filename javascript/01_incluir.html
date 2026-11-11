@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a JavaScript</title>
+    <script>
+        console.log('Saludo desde el head de la página');
+    </script>
+</head>
+<body>
+    <h1>Incluir JavaScript en un documento HTML</h1>
+
+    <h2>Modo inline</h2>
+    <button onclick="alert('¡Vamos Messi!')">Mostrar mensaje</button>
+
+    <input type="text"
+           oninput="console.log(this.value)"
+           placeholder="Escribe algo...">
+    <input type="text"
+           onchange="console.log('Valor final guardado:', this.value)"
+           placeholder="Escribe y haz clic fuera">
+    <input type="text"
+           onfocus="console.log('Estás escribiendo aquí...')"
+           onblur="console.log('Saliste del campo de texto')"
+           placeholder="Haz clic dentro y fuera">
+
+    <h2>Archivo externo</h2>
+    <script src="01_incluir.js"></script>
+</body>
+</html>

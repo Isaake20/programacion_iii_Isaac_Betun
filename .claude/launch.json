@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "chequea-tu-carro",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["chequea-tu-carro/server.js"],
+      "port": 3000
+    }
+  ]
+}
