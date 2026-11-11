@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-EC">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chequea tu Carro</title>
+<meta name="description" content="Consulta gratuita del historial de un carro o moto en Ecuador: datos del vehículo, matrícula, impuestos y multas, todo en una sola página.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 3 6 10v12c0 11 7.5 18.6 18 23 10.5-4.4 18-12 18-23V10L24 3Z" fill="currentColor" opacity=".14"/>
+        <path d="M24 3 6 10v12c0 11 7.5 18.6 18 23 10.5-4.4 18-12 18-23V10L24 3Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="m16 23 6 6 11-12" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="wm">Chequea tu Carro<small>HISTORIAL VEHICULAR · ECUADOR</small></div>
+    </div>
+    <button class="theme-toggle" id="themeBtn" aria-label="Cambiar tema" title="Cambiar tema">◐</button>
+  </div>
+
+  <section class="hero">
+    <div class="chips">
+      <span class="chip free">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Gratis
+      </span>
+      <span class="chip">Datos en una sola página</span>
+      <span class="chip">No guardamos tus datos</span>
+    </div>
+    <h1>El historial del carro, en un solo lugar</h1>
+    <p class="tagline">Escribe la placa y te mostramos aquí mismo los datos del vehículo, la matrícula,
+      los impuestos y las multas. Sin saltar entre páginas. Hecho para la comunidad.</p>
+
+    <div class="finder">
+      <label for="placa">Placa del vehículo</label>
+      <div class="finder-row">
+        <div class="plate-input">
+          <div class="ec"><span class="star">★</span><span class="cc">EC</span></div>
+          <input id="placa" maxlength="8" autocomplete="off" inputmode="latin" placeholder="PIS0113" aria-describedby="placaErr">
+        </div>
+        <button class="btn" id="goBtn">Consultar</button>
+      </div>
+      <div class="err" id="placaErr" role="alert"></div>
+      <p class="examples">Prueba:
+        <button type="button" data-ex="PIS0113">PIS0113 (auto)</button> ·
+        <button type="button" data-ex="KB485G">KB485G (moto)</button>
+      </p>
+    </div>
+  </section>
+
+  <section id="result" aria-live="polite"></section>
+
+  <div class="note">
+    <b>Importante:</b> los datos pertenecen a los registros oficiales (ANT, SRI, agencias de tránsito) y se
+    obtienen a través de un proveedor de datos autorizado. Esta página no los almacena ni los revende, y es
+    gratuita para la comunidad. No está afiliada a ninguna entidad del Estado.
+  </div>
+
+  <footer>
+    Herramienta comunitaria y de código abierto. Verifica siempre los datos sensibles en los portales
+    oficiales <b>.gob.ec</b> antes de comprar o traspasar un vehículo.
+  </footer>
+
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
