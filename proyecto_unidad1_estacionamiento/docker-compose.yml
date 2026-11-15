@@ -1,0 +1,16 @@
+# Levanta solamente la base de datos PostgreSQL para trabajar en local
+services:
+  postgres:
+    image: postgres:16
+    container_name: estacionamiento-postgres
+    environment:
+      POSTGRES_DB: estacionamiento_db
+      POSTGRES_USER: estacionamiento
+      POSTGRES_PASSWORD: estacionamiento123
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
