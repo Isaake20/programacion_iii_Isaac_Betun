@@ -1,0 +1,63 @@
+name: CI - API Estacionamiento
+
+# Se ejecuta cuando hay cambios en el proyecto de la Unidad 1
+on:
+  push:
+    paths:
+      - 'proyecto_unidad1_estacionamiento/**'
+      - '.github/workflows/ci-estacionamiento.yml'
+  pull_request:
+    paths:
+      - 'proyecto_unidad1_estacionamiento/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Compilar y probar
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: proyecto_unidad1_estacionamiento
+
+    steps:
+      - name: 1. Obtener el codigo del repositorio
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: 3. Compilar el proyecto
+        run: mvn -B clean compile
+
+      - name: 4. Ejecutar las pruebas
+        run: mvn -B test
+
+      - name: 5. Empaquetar el .jar
+        run: mvn -B package -DskipTests
+
+      - name: 6. Publicar reporte de pruebas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reportes-pruebas
+          path: proyecto_unidad1_estacionamiento/target/surefire-reports/
+
+      - name: 7. Publicar el .jar generado
+        uses: actions/upload-artifact@v4
+        with:
+          name: estacionamiento-api
+          path: proyecto_unidad1_estacionamiento/target/*.jar
+
+      - name: Resultado - construccion exitosa
+        if: success()
+        run: echo "BUILD EXITOSO - el proyecto compilo y todas las pruebas pasaron"
+
+      - name: Resultado - construccion fallida
+        if: failure()
+        run: |
+          echo "BUILD FALLIDO - revisar el paso que fallo y los reportes de pruebas"
+          exit 1
