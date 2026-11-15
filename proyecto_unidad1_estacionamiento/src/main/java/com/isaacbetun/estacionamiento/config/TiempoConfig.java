@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.time.Clock;
-import java.time.ZoneId;
 
 /**
  * Reloj de la aplicacion. Se inyecta en los servicios para poder
@@ -15,6 +14,6 @@ public class TiempoConfig {
 
     @Bean
     public Clock reloj() {
-        return Clock.system(ZoneId.of("America/Guayaquil"));
+        return Clock.systemDefaultZone();
     }
 }
