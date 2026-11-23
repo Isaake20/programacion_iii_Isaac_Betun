@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 2 - Isaac Betun</title>
+</head>
+<body>
+    <h1>Lionel Messi</h1>
+    <h1>Autor: Isaac Betun</h1>
+
+    <h2>Comentario sobre el partido</h2>
+    <form action="#" method="post">
+        <p><label for="usuario">Usuario:</label>
+           <input type="text" id="usuario" name="usuario" placeholder="Tu usuario" required></p>
+        <p><label for="clave">Contraseña:</label>
+           <input type="password" id="clave" name="clave" minlength="6" required></p>
+        <p><label for="partido">Partido:</label>
+           <select id="partido" name="partido">
+               <option>Argentina vs Francia</option>
+               <option>Barcelona vs Real Madrid</option>
+           </select></p>
+        <p><label for="comentario">Comentario:</label><br>
+           <textarea id="comentario" name="comentario" rows="5" cols="40"></textarea></p>
+        <button type="submit">Publicar</button>
+    </form>
+</body>
+</html>
