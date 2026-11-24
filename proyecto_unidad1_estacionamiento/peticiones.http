@@ -1,0 +1,69 @@
+### Variables
+@base = http://localhost:8080/api
+
+### 1. Registrar usuario
+POST {{base}}/usuarios
+Content-Type: application/json
+
+{"cedula":"1004567891","nombres":"Isaac","apellidos":"Betun","email":"isaac.betun@correo.com","telefono":"0987654321"}
+
+### 2. Registrar vehiculo
+POST {{base}}/vehiculos
+Content-Type: application/json
+
+{"placa":"PBA-1234","marca":"Chevrolet","modelo":"Aveo","color":"Rojo","tipo":"AUTO","usuarioId":1}
+
+### 3. Espacios disponibles para autos
+GET {{base}}/espacios/disponibles?tipo=AUTO
+
+### 4. Registrar ingreso (asignacion automatica de espacio)
+POST {{base}}/registros/ingreso
+Content-Type: application/json
+
+{"placa":"PBA-1234","observacion":"Cliente frecuente"}
+
+### 5. Intentar un segundo ingreso del mismo vehiculo (422)
+POST {{base}}/registros/ingreso
+Content-Type: application/json
+
+{"placa":"PBA-1234"}
+
+### 6. Vehiculos dentro del estacionamiento
+GET {{base}}/registros/activos
+
+### 7. Resumen de ocupacion
+GET {{base}}/espacios/disponibilidad
+
+### 8. Registrar salida
+PATCH {{base}}/registros/1/salida
+
+### 9. Recurso inexistente (404)
+GET {{base}}/usuarios/999
+
+### 10. Actualizar usuario
+PUT {{base}}/usuarios/1
+Content-Type: application/json
+
+{"cedula":"1004567891","nombres":"Isaac","apellidos":"Betun","email":"isaac.betun@correo.com","telefono":"0961112233"}
+
+### 11. Poner un espacio en mantenimiento
+PATCH {{base}}/espacios/6/estado
+Content-Type: application/json
+
+{"estado":"MANTENIMIENTO"}
+
+### 12. DELETE sin rol -> 403 (interceptor)
+DELETE {{base}}/registros/1
+
+### 13. DELETE con rol ADMIN -> 204
+DELETE {{base}}/registros/1
+X-Rol: ADMIN
+
+### 14. Historial por placa
+GET {{base}}/registros/vehiculo/PBA-1234
+
+### 15. Recaudacion del dia
+GET {{base}}/registros/recaudacion?desde=2026-11-14&hasta=2026-11-14
+
+### 16. Metricas del aspecto de auditoria
+GET {{base}}/auditoria/metricas

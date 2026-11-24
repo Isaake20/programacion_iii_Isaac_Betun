@@ -10,6 +10,10 @@ Repositorio correspondiente a la materia **Programación III**, donde se recopil
 
 Durante la materia se trabajarán diferentes tecnologías orientadas al desarrollo web, desde los fundamentos del desarrollo frontend hasta la creación de aplicaciones utilizando frameworks modernos.
 
+## Proyectos
+
+- [Proyecto Grupal Unidad 1 – API de Gestión de Estacionamiento (Spring Boot)](proyecto_unidad1_estacionamiento/)
+
 ## Tecnologías y conceptos
 
 ### HTML
