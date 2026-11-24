@@ -1,0 +1,89 @@
+/* Práctica 07_texto (mp) - Autor: Isaac Betun - paleta Selección Argentina */
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.texto-argentina {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.texto-barcelona {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.texto-40px {
+    font-size: 40px;
+}
+.texto-20px {
+    font-size: 20px;
+}
+.texto-10px {
+    font-size: 10px;
+}
+
+.debutante {
+    font-weight: 300;
+}
+.titular {
+    font-weight: 500;
+    color: #3b82f6;
+}
+.capitan {
+    font-weight: 800;
+    color: #ef4444;
+}
+
+.estilo-normal {
+    font-style: normal;
+}
+.estilo-italica {
+    font-style: italic;
+}
+
+.izquierda {
+    text-align: left;
+}
+.centro {
+    text-align: center;
+}
+.derecha {
+    text-align: right;
+}
+
+.importante {
+    text-decoration: underline;
+    text-decoration-color: gold;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+}
+.tachado {
+    text-decoration: line-through;
+}
+.enlace {
+    text-decoration: none;
+}
+
+.titulo-mayuscula {
+    text-transform: uppercase;
+}
+.titulo-minuscula {
+    text-transform: lowercase;
+}
+.titulo-capitalizado {
+    text-transform: capitalize;
+}
+
+.espaciado-simple {
+    line-height: 1;
+}
+.espaciado-doble {
+    line-height: 2;
+}
+
+.espacio-letras1 {
+    letter-spacing: 4px;
+}
+.espacio-letras2 {
+    letter-spacing: 1px;
+}
+
+.autor { font-style: italic; opacity: 0.85; }

@@ -1,0 +1,45 @@
+/* Práctica 06_tarjetas (mp) - Autor: Isaac Betun - paleta Selección Argentina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d3557;
+    color: #ffffff;
+}
+
+h1 {
+    color: #75aadb;
+}
+
+h2 {
+    color: #f4c430;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 320px;
+    min-height: 180px;
+    margin: 20px 0;
+    background-color: #274c77;
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.tarjeta_barcelona {
+    border-color: #6cace4;
+}
+
+.tarjeta_argentina {
+    border-color: #75aadb;
+}
+
+.tarjeta_miami {
+    border-color: #cfe8fc;
+}
+
+footer {
+    background-color: #274c77;
+    text-align: center;
+    padding: 10px;
+}
+
+.autor { font-style: italic; opacity: 0.85; }

@@ -1,0 +1,60 @@
+/* Práctica 14_flexbox_grid_areas (mp) - Autor: Isaac Betun - paleta Selección Argentina */
+body {
+    margin: 0;
+    background-color: #1d3557;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+}
+
+.pagina {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+    gap: 15px;
+    padding: 15px;
+}
+
+.pagina > * {
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+    background-color: #274c77;
+    color: #f4c430;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #75aadb;
+}
+
+nav a {
+    color: #1d3557;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+main {
+    grid-area: main;
+    background-color: #6cace4;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #2b1a24;
+    border: 2px solid #cfe8fc;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #f4c430;
+    color: #1d3557;
+    text-align: center;
+}
+
+.autor { font-style: italic; opacity: 0.85; }

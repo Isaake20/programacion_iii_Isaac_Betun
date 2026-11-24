@@ -1,0 +1,127 @@
+/* Práctica 13_flexbox_grid (mp) - Autor: Isaac Betun - paleta Selección Argentina */
+body {
+    background-color: #1d3557;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #f4c430;
+}
+
+.personaje {
+    padding: 20px;
+    background-color: #75aadb;
+    color: #1d3557;
+    border: 2px solid #f4c430;
+    text-align: center;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 15px;
+    padding: 20px;
+    background-color: #274c77;
+}
+
+.consejo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    background-color: #274c77;
+}
+
+.operaciones {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    background-color: #274c77;
+}
+
+.operaciones div {
+    padding: 30px;
+    background-color: #6cace4;
+    border: 2px solid #f4c430;
+    text-align: center;
+}
+
+.flota {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
+    color: white;
+    background-color: #274c77;
+}
+
+.flota div {
+    padding: 30px;
+    background-color: #75aadb;
+    color: #1d3557;
+    border: 2px solid #f4c430;
+    text-align: center;
+}
+
+.consejo2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: #274c77;
+}
+
+.naves {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: #274c77;
+}
+
+.naves div {
+    padding: 30px;
+    background-color: #6cace4;
+    border: 2px solid #f4c430;
+    text-align: center;
+}
+
+.misiones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    color: white;
+    background-color: #274c77;
+}
+
+.misiones div {
+    padding: 30px;
+    background-color: #6cace4;
+    border: 2px solid #f4c430;
+    text-align: center;
+}
+
+.destacada {
+    grid-column: span 2;
+    padding: 30px;
+    background-color: #cfe8fc !important;
+    color: #1d3557;
+    border: 2px solid #f4c430;
+    text-align: center;
+}
+
+.mision-principal {
+    grid-row: span 2;
+    padding: 30px;
+    background-color: #f4c430 !important;
+    color: #1d3557;
+    border: 2px solid #75aadb;
+    text-align: center;
+}
+
+.autor { font-style: italic; opacity: 0.85; }

@@ -1,0 +1,75 @@
+/* Práctica 10_visibility (mp) - Autor: Isaac Betun - paleta Selección Argentina */
+body {
+    background-color: #1d3557;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+}
+
+.secreta {
+    visibility: hidden;
+}
+
+.caja {
+    position: static;
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.especial {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #6cace4;
+}
+
+.tarjeta-relativa {
+    position: relative;
+    width: 300px;
+    padding: 30px;
+    border: 2px solid #75aadb;
+    color: #cfe8fc;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f4c430;
+    padding: 5px 10px;
+    color: #1d3557;
+}
+
+.boton-fijo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #75aadb;
+    color: #1d3557;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px;
+    background-color: #274c77;
+}
+
+nav a {
+    color: #f4c430;
+    margin-right: 20px;
+}
+
+section {
+    min-height: 450px;
+    padding: 30px;
+    border-bottom: 1px solid #6474bb;
+}
+
+.autor { font-style: italic; opacity: 0.85; }

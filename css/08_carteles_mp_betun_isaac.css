@@ -1,0 +1,110 @@
+/* Práctica 08_carteles (mp) - Autor: Isaac Betun - paleta Selección Argentina */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1d3557;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: #f4c430;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #274c77;
+}
+
+nav a {
+    color: #f4c430;
+    margin: 0 15px;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.torneo {
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 3px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.torneo h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.torneo p {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.estado {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.urgente {
+    background-color: #dc2626;
+}
+
+.activa {
+    background-color: #16a34a;
+}
+
+.completada {
+    background-color: #f4c430;
+    color: #1d3557;
+}
+
+.argentina {
+    background-color: #274c77;
+    border-color: #75aadb;
+}
+
+.barcelona {
+    background-color: #2a0f1d;
+    border-color: #6cace4;
+}
+
+.miami {
+    background-color: #2b1a24;
+    border-color: #cfe8fc;
+}
+
+.volver {
+    display: block;
+    text-align: center;
+    color: #f4c430;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #274c77;
+}
+
+.autor { font-style: italic; opacity: 0.85; }

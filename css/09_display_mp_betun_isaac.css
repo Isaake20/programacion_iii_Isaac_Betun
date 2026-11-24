@@ -1,0 +1,21 @@
+/* Práctica 09_display (mp) - Autor: Isaac Betun - paleta Selección Argentina */
+.equipo {
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.barcelona {
+    background-color: #6cace4;
+}
+
+.argentina {
+    background-color: #75aadb;
+}
+
+.miami {
+    background-color: #cfe8fc;
+}
+
+.autor { font-style: italic; opacity: 0.85; }
