@@ -1,7 +1,7 @@
 const fotos = [
-    '../../html/images/messi.jpg',
-    '../../html/images/personajes/messi3.jpg',
-    '../../html/images/personajes/messi4.jpeg'
+    'imagenes/messi.jpg',
+    'imagenes/messi3.jpg',
+    'imagenes/messi4.jpeg'
 ];
 let actual = 0;
 const foto = document.getElementById('foto');

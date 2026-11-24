@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; margin: 2rem; }
+.club { padding: 0.25rem 0.5rem; }
+.resaltado { background: #75aadb; color: #fff; border-radius: 4px; }
+button { padding: 0.5rem 1rem; cursor: pointer; }
